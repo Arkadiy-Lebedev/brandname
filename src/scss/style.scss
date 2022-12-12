@@ -8,6 +8,38 @@
 @import "swiper.scss";
 
 
+.elements-gride{
+	column-count: 1; // сколько колонок нужно?
+	column-gap: 1em;
+	margin-top: rem(22);
+}
+
+.elements-gride .element-item {
+	display: inline-block; 
+	width: 100%;           
+	margin-bottom: 1em;
+	
+}
+
+
+.elements-gride2{
+	column-count: 1; 
+	column-gap: 1em;
+	margin-top: rem(22);
+}
+
+.elements-gride2 .element-item2 {
+	display: inline-block; 
+	width: 100%;           
+	margin-bottom: 1em;
+	
+}
+
+.gride-content{
+	display: flex;
+	justify-content: space-between;
+}
+
 body {
 	font-family: Inter;
 	font-weight: 400;
@@ -1221,6 +1253,12 @@ body {
 
 
 @media (min-width: 375px){ 
+
+	.elements-gride2{
+		column-count: 2; 
+		
+	}
+
 	.conteiner{
 		width: 100%;
 		padding-left: rem(16);
@@ -1243,6 +1281,12 @@ body {
 
 
 @media (min-width: 425px){ 
+
+	.elements-gride{
+		column-count: 2; 
+		
+	}
+
 	.conteiner{
 		width: 100%;
 		padding-left: rem(20);
@@ -1260,6 +1304,18 @@ body {
 
 
 @media (min-width: 768px){ 
+
+	.elements-gride2{
+		column-count: 3; 
+		column-gap: rem(20);
+		
+	}
+
+	.elements-gride{
+		column-count: 3; 
+		
+	}
+
 	.conteiner{
 		width: 100%;
 		padding-left: rem(25);
@@ -1324,7 +1380,15 @@ body {
 
 @media (min-width: 992px){ 
 
+	.elements-gride2{
+		column-count: 4; 
+		column-gap: rem(20);	
+	}
 
+	.elements-gride{
+		column-count: 4; 
+		
+	}
 
 .gumburger{
 	display: none;
@@ -2599,5 +2663,25 @@ background-color: var(--selection);
 }
 
 // футер конец
+
+
+
+.elements-gride{
+	column-count: 5; 
+	column-gap: 1em;
+}
+
+.elements-gride .element-item {
+	display: inline-block;
+	width: 100%;          
+	margin-bottom: 1em;
+	
+}
+
+.elements-gride2{
+	column-count: 4; 
+	column-gap: rem(20);	
+}
+
 
 }

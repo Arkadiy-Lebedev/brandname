@@ -124,3 +124,8 @@ const filterToggle = (btn, filter) => {
 
 filterToggle(btnFilterGallery, filterGallery)
 filterToggle(btnFilterCategory, filterCategory)
+
+
+
+
+
