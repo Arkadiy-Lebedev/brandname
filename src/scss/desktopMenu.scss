@@ -1,0 +1,97 @@
+.menu{
+    display: flex;
+    align-items: center;
+  
+}
+
+.menu__list{
+    display: flex; 
+}
+
+.menu__list-item{
+    padding: rem(13) rem(33);
+    
+}
+
+.menu__list-link:hover{
+    color: var(--accent)
+}
+
+.menu__list-link{
+    font-family: Inter;
+	font-weight: 500;
+	font-style: normal;
+    color: var(--textAccent);    
+    display: flex;
+    align-items: center;
+    font-size: rem(18);
+}
+
+.wrapper-menu{
+    background-color: var(--subAccentBtn);    
+}
+
+.menu__list-submenu{
+    position: relative;
+}
+
+.menu__list-link:hover svg path{
+    fill: var(--accent) !important;
+}
+
+.menu__list-submenu.--active .menu__list-link svg path{
+    fill: var(--accent) !important;
+}
+
+.menu__list-submenu.--active .menu__list-link{
+    color: var(--accent) ;
+}
+
+.submenu__list{
+    display: none;
+    position: absolute;
+    bottom: 0;
+    transform: translateY(102%);
+    left: 0;
+    width: 100%;
+    background-color: var(--subMenu);
+    border-radius: rem(5);
+    padding: rem(15) rem(33) rem(9) rem(20)
+}
+
+.menu__list-submenu.--active .submenu__list{
+    display: block;
+}
+
+.submenu__list-item{   
+    padding-bottom: rem(10);
+
+}
+
+.submenu__list-link:hover{
+    color: var(--accent)
+}
+
+
+.submenu__list-link{
+    font-family: Inter;
+	font-weight: 500;
+	font-style: normal;
+    color: var(--textAccent);    
+    display: flex;
+    align-items: center;
+    font-size: rem(14);
+  
+}
+
+.menu__list-img{
+    margin-left: rem(8);
+}
+
+.--active{
+    color: var(--accent);  
+}
+
+.menu__logo-link{
+    display: block;
+}

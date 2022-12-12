@@ -1,0 +1,35 @@
+
+:root {
+    --bg:#FFFFFF;
+    --accent:#E34449;
+    --subAccent:#2D2D2D;
+    --subAccentBtn:#2D2D2D;
+    --subMenu:#424242;
+    --text:#707070;
+    --selection:#D9D9D9;
+    --textPagination:#D9D9D9;
+    --textAccent: #FFFFFF;
+    --bgCart: #F5F5F5;
+    --bgBtn:#D9D9D9;
+    --border:#D9D9D9;
+    --bgInput:#FFFFFF;
+    --textCategory: #2D2D2D;
+    --dashed: #B7BAC5;
+    --textCategoryNumber: #707070;
+}
+
+body.dark{   
+    --bg:#151515; 
+    --subAccent:#FFFFFF;
+    --selection:#303030;
+    --text:#D9D9D9;
+    --bgCart: #2D2D2D;
+    --bgBtn:#2D2D2D;
+    --border:#707070;
+    --bgInput:#151515;
+    --textCategory: #D9D9D9;
+    --dashed: #303030;
+    --textCategoryNumber: #D9D9D9;
+
+}
+
