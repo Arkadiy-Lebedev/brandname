@@ -1,18 +1,20 @@
-import {
-    hideSubMenu
-} from "./modules/functions.js";
-
-
-
 const filterItems = document.querySelectorAll("[data-sub='submenu']"),
     body = document.querySelector("body"),
     gamburger = document.querySelector(".gumburger"),
     mobileMenu = document.querySelector(".mobile-menu"),
     mobileBtnClose = document.querySelector(".mobile-close"),
-    // btnShema = document.querySelectorAll(".header__btn-shema"),
+    headerInput = document.querySelector(".header__input"),
+    headerSearch = document.querySelector(".header__search"),
     btnShemaMobile = document.querySelectorAll("[data-shema]"),
     settingGalery = document.querySelectorAll("[data-gallery] .sort__item-text"),
     settingCategory = document.querySelectorAll("[data-category] .sort__item-text");
+
+    const hideSubMenu = (elemArray) => {
+        elemArray.forEach(el => {
+            el.closest("[data-parent]").classList.remove('--active');
+        })
+    }
+
 
     const hideElementsAll = (elemArray) => {
         elemArray.forEach(el => {
@@ -33,6 +35,14 @@ const tabSetting = (tabArray) => {
 })
 }
 
+headerInput.addEventListener("focus", () => {    
+    headerSearch.classList.add("--active");
+})
+
+headerInput.addEventListener("blur", () => {   
+    
+    headerSearch.classList.remove("--active");
+})
 
 tabSetting(settingGalery);
 tabSetting(settingCategory);
@@ -124,6 +134,17 @@ const filterToggle = (btn, filter) => {
 
 filterToggle(btnFilterGallery, filterGallery)
 filterToggle(btnFilterCategory, filterCategory)
+
+
+
+    
+    
+    
+    
+    
+    
+    
+    
 
 
 
