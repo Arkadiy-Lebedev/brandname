@@ -3,6 +3,7 @@
 @@include('html/head.html',{
 "title":"BrandName"
 })
+
 <body>
 	@@include('html/header.html',{})
 	<div class="wrapper-menu">
@@ -28,469 +29,468 @@
 			<div class="setting" data-gallery>
 				<div class="setting setting-gallery-wrapper">
 					<div class="sort__wrapper">
-					<div class="sort__title">
-						<p class="sort__title-text"> <img src="@img/sort.svg" alt="" class="sort__title-img">Sort by:
-						</p>
+						<div class="sort__title">
+							<p class="sort__title-text"> <img src="@img/sort.svg" alt="" class="sort__title-img">Sort
+								by:
+							</p>
+						</div>
+						<div class="sort__items">
+							<div class="sort__item">
+								<p class="sort__item-text sort__item-text--first">
+									Popular
+								</p>
+							</div>
+							<div class="sort__item">
+								<p class="sort__item-text">
+									Newest
+								</p>
+							</div>
+							<div class="sort__item">
+								<p class="sort__item-text">
+									Duration
+								</p>
+							</div>
+							<div class="sort__item">
+								<p class="sort__item-text sort__item-text--last">
+									Rate
+								</p>
+							</div>
+							<div class="filter-btn" data-btn="filter-gallery">
+								<svg class="filter-btn-img" width="40" height="40" viewBox="0 0 40 40" fill="none"
+									xmlns="http://www.w3.org/2000/svg">
+									<path
+										d="M0 5C0 2.23858 2.23858 0 5 0H35C37.7614 0 40 2.23858 40 5V35C40 37.7614 37.7614 40 35 40H5C2.23858 40 0 37.7614 0 35V5Z"
+										fill="#2D2D2D" />
+									<path
+										d="M29 12V14H28L23 21.5V30H17V21.5L12 14H11V12H29ZM14.404 14L19 20.894V28H21V20.894L25.596 14H14.404Z"
+										fill="white" />
+								</svg>
+							</div>
+						</div>
 					</div>
-					<div class="sort__items">
-						<div class="sort__item">
-							<p class="sort__item-text sort__item-text--first">
-								Popular
-							</p>
+					<div class="filter__wrapper " data-filter="gallery">
+						<div class="filter__title">
+							<p class="filter__title-text"> <img src="@img/filter.svg" alt="" class="filter__title-img">
+								Filter:</p>
 						</div>
-						<div class="sort__item">
-							<p class="sort__item-text">
-								Newest
-							</p>
+						<div class="filter__items">
+							<div class="filter__item" data-parent>
+								<p class="filter__item-text" data-sub="submenu">Date added <svg class="filter__item-img"
+										viewBox="0 0 14 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+										<path
+											d="M6.99999 5.172L11.95 0.222L13.364 1.636L6.99999 8L0.635986 1.636L2.04999 0.222L6.99999 5.172Z"
+											fill="#D9D9D9" />
+									</svg> </p>
+								<div class="filter__submenu">
+									<p class="filter__submenu-text">Anytime
+									</p>
+									<p class="filter__submenu-text">Last 3 days
+									</p>
+									<p class="filter__submenu-text">This week
+									</p>
+									<p class="filter__submenu-text">This month
+									</p>
+									<p class="filter__submenu-text">Last 3 month
+									</p>
+								</div>
+							</div>
+							<div class="filter__item" data-parent>
+								<p class="filter__item-text" data-sub="submenu">Duration <svg class="filter__item-img"
+										width="14" height="8" viewBox="0 0 14 8" fill="none"
+										xmlns="http://www.w3.org/2000/svg">
+										<path
+											d="M6.99999 5.172L11.95 0.222L13.364 1.636L6.99999 8L0.635986 1.636L2.04999 0.222L6.99999 5.172Z"
+											fill="#D9D9D9" />
+									</svg> </p>
+								<div class="filter__submenu">
+									<p class="filter__submenu-text">All
+									</p>
+									<p class="filter__submenu-text">0~10 min
+									</p>
+									<p class="filter__submenu-text">10~40 min
+									</p>
+									<p class="filter__submenu-text">40+ min
+									</p>
+									<p class="filter__submenu-text">Full video
+									</p>
+								</div>
+							</div>
+							<div class="filter__item" data-parent>
+								<p class="filter__item-text" data-sub="submenu">Quality<svg class="filter__item-img"
+										width="14" height="8" viewBox="0 0 14 8" fill="none"
+										xmlns="http://www.w3.org/2000/svg">
+										<path
+											d="M6.99999 5.172L11.95 0.222L13.364 1.636L6.99999 8L0.635986 1.636L2.04999 0.222L6.99999 5.172Z"
+											fill="#D9D9D9" />
+									</svg> </p>
+								<div class="filter__submenu">
+									<p class="filter__submenu-text">All
+									</p>
+									<p class="filter__submenu-text">HD
+									</p>
+									<p class="filter__submenu-text">720+
+									</p>
+									<p class="filter__submenu-text">1080+
+									</p>
+								</div>
+							</div>
 						</div>
-						<div class="sort__item">
-							<p class="sort__item-text">
-								Duration
-							</p>
-						</div>
-						<div class="sort__item">
-							<p class="sort__item-text sort__item-text--last">
-								Rate
-							</p>
-						</div>
-						<div class="filter-btn" data-btn="filter-gallery">
-							<svg class="filter-btn-img" width="40" height="40" viewBox="0 0 40 40" fill="none"
+					</div>
+					<div class="pagination pagination__top">
+						<p class="pagination__item pagination__item--active">1</p>
+						<p class="pagination__item">2</p>
+						<p class="pagination__item">3</p>
+						<p class="pagination__item">4</p>
+						<p class="pagination__item-point">...</p>
+						<p class="pagination__item">6</p>
+						<p class="pagination__item"><svg width="8" height="14" viewBox="0 0 8 14" fill="none"
 								xmlns="http://www.w3.org/2000/svg">
 								<path
-									d="M0 5C0 2.23858 2.23858 0 5 0H35C37.7614 0 40 2.23858 40 5V35C40 37.7614 37.7614 40 35 40H5C2.23858 40 0 37.7614 0 35V5Z"
-									fill="#2D2D2D" />
-								<path
-									d="M29 12V14H28L23 21.5V30H17V21.5L12 14H11V12H29ZM14.404 14L19 20.894V28H21V20.894L25.596 14H14.404Z"
-									fill="white" />
+									d="M5.17205 6.99999L0.222046 2.04999L1.63605 0.635986L8.00005 6.99999L1.63605 13.364L0.222046 11.95L5.17205 6.99999Z"
+									fill="#D9D9D9" />
 							</svg>
-						</div>
+						</p>
 					</div>
-				</div>
-				<div class="filter__wrapper " data-filter="gallery">
-					<div class="filter__title">
-						<p class="filter__title-text"> <img src="@img/filter.svg" alt="" class="filter__title-img">
-							Filter:</p>
-					</div>
-					<div class="filter__items">
-						<div class="filter__item" data-parent>
-							<p class="filter__item-text" data-sub="submenu">Date added <svg class="filter__item-img"
-									viewBox="0 0 14 8" fill="none" xmlns="http://www.w3.org/2000/svg">
-									<path
-										d="M6.99999 5.172L11.95 0.222L13.364 1.636L6.99999 8L0.635986 1.636L2.04999 0.222L6.99999 5.172Z"
-										fill="#D9D9D9" />
-								</svg> </p>
-							<div class="filter__submenu">
-								<p class="filter__submenu-text">Anytime
-								</p>
-								<p class="filter__submenu-text">Last 3 days
-								</p>
-								<p class="filter__submenu-text">This week
-								</p>
-								<p class="filter__submenu-text">This month
-								</p>
-								<p class="filter__submenu-text">Last 3 month
-								</p>
-							</div>
-						</div>
-						<div class="filter__item" data-parent>
-							<p class="filter__item-text" data-sub="submenu">Duration <svg class="filter__item-img"
-									width="14" height="8" viewBox="0 0 14 8" fill="none"
-									xmlns="http://www.w3.org/2000/svg">
-									<path
-										d="M6.99999 5.172L11.95 0.222L13.364 1.636L6.99999 8L0.635986 1.636L2.04999 0.222L6.99999 5.172Z"
-										fill="#D9D9D9" />
-								</svg> </p>
-							<div class="filter__submenu">
-								<p class="filter__submenu-text">All
-								</p>
-								<p class="filter__submenu-text">0~10 min
-								</p>
-								<p class="filter__submenu-text">10~40 min
-								</p>
-								<p class="filter__submenu-text">40+ min
-								</p>
-								<p class="filter__submenu-text">Full video
-								</p>
-							</div>
-						</div>
-						<div class="filter__item" data-parent>
-							<p class="filter__item-text" data-sub="submenu">Quality<svg class="filter__item-img"
-									width="14" height="8" viewBox="0 0 14 8" fill="none"
-									xmlns="http://www.w3.org/2000/svg">
-									<path
-										d="M6.99999 5.172L11.95 0.222L13.364 1.636L6.99999 8L0.635986 1.636L2.04999 0.222L6.99999 5.172Z"
-										fill="#D9D9D9" />
-								</svg> </p>
-							<div class="filter__submenu">
-								<p class="filter__submenu-text">All
-								</p>
-								<p class="filter__submenu-text">HD
-								</p>
-								<p class="filter__submenu-text">720+
-								</p>
-								<p class="filter__submenu-text">1080+
-								</p>
-							</div>
-						</div>
-					</div>
-				</div>
-				<div class="pagination">
-					<p class="pagination__item pagination__item--active">1</p>
-					<p class="pagination__item">2</p>
-					<p class="pagination__item">3</p>
-					<p class="pagination__item">4</p>
-					<p class="pagination__item-point">...</p>
-					<p class="pagination__item">6</p>
-					<p class="pagination__item"><svg width="8" height="14" viewBox="0 0 8 14" fill="none"
-							xmlns="http://www.w3.org/2000/svg">
-							<path
-								d="M5.17205 6.99999L0.222046 2.04999L1.63605 0.635986L8.00005 6.99999L1.63605 13.364L0.222046 11.95L5.17205 6.99999Z"
-								fill="#D9D9D9" />
-						</svg>
-					</p>
-				</div>
-				<div class="elements-gride">
-					<div class="gallery__item element-item">
-						<div class="item__img">
-							<a href="#" class="gallery__item-link">
-								<img src="@img/gallery/1.jpg" alt="" class="item__img-image">
-							<div class="item__img-sub">
-								<p class="item__img-text">Nonformal learning and combined combined</p>
-							</div>
-							</a>
-							
-						</div>
-						<div class="item__info">
-							<div class="item__info-box">
-								<img src="@img/eye.svg" alt="изображение" class="item__info-image">
-								<p class="item__info-text">12</p>
-							</div>
-							<div class="item__info-box">
-								<img src="@img/like.svg" alt="изображение" class="item__info-image">
-								<p class="item__info-text">90 %</p>
-							</div>
-							<div class="item__info-box">
-								<img src="@img/chat.svg" alt="изображение" class="item__info-image">
-								<p class="item__info-text">5</p>
-							</div>
-						</div>
-						<div class="gallery__chips">
-							<div class="chips">
-								<p class="chips__text">learning</p>
-							</div>
-							<div class="chips">
-								<p class="chips__text">directions</p>
-							</div>
-							<div class="chips">
-								<p class="chips__text">wall</p>
-							</div>
-						</div>
-						<img src="@img/hd.svg" alt="" class="gallery__item-hd">
-					</div>
-					<div class="gallery__item element-item">
-						<div class="item__img">
-							<img src="@img/gallery/2.jpg" alt="" class="item__img-image">
-							<div class="item__img-sub">
-								<p class="item__img-text">Nonformal learning and combined combined</p>
-							</div>
-						</div>
-						<div class="item__info">
-							<div class="item__info-box">
-								<img src="@img/eye.svg" alt="изображение" class="item__info-image">
-								<p class="item__info-text">12</p>
-							</div>
-							<div class="item__info-box">
-								<img src="@img/like.svg" alt="изображение" class="item__info-image">
-								<p class="item__info-text">90 %</p>
-							</div>
-							<div class="item__info-box">
-								<img src="@img/chat.svg" alt="изображение" class="item__info-image">
-								<p class="item__info-text">5</p>
-							</div>
-						</div>
-						<div class="gallery__chips">
-							<div class="chips">
-								<p class="chips__text">learning</p>
-							</div>
-							<div class="chips">
-								<p class="chips__text">directions</p>
-							</div>
-							<div class="chips">
-								<p class="chips__text">wall</p>
-							</div>
-						</div>
-					</div>
-					<div class="gallery__item element-item">
-						<div class="item__img">
-							<img src="@img/gallery/3.jpg" alt="" class="item__img-image">
-							<div class="item__img-sub">
-								<p class="item__img-text">Nonformal learning and combined combined</p>
-							</div>
-						</div>
-						<div class="item__info">
-							<div class="item__info-box">
-								<img src="@img/eye.svg" alt="изображение" class="item__info-image">
-								<p class="item__info-text">12</p>
-							</div>
-							<div class="item__info-box">
-								<img src="@img/like.svg" alt="изображение" class="item__info-image">
-								<p class="item__info-text">90 %</p>
-							</div>
-							<div class="item__info-box">
-								<img src="@img/chat.svg" alt="изображение" class="item__info-image">
-								<p class="item__info-text">5</p>
-							</div>
-						</div>
-						<div class="gallery__chips">
-							<div class="chips">
-								<p class="chips__text">learning</p>
-							</div>
-							<div class="chips">
-								<p class="chips__text">directions</p>
-							</div>
-							<div class="chips">
-								<p class="chips__text">wall</p>
-							</div>
-						</div>
-					</div>
-					<div class="gallery__item element-item">
-						<div class="item__img">
-							<img src="@img/gallery/4.jpg" alt="" class="item__img-image">
-							<div class="item__img-sub">
-								<p class="item__img-text">Nonformal learning and combined combined</p>
-							</div>
-						</div>
-						<div class="item__info">
-							<div class="item__info-box">
-								<img src="@img/eye.svg" alt="изображение" class="item__info-image">
-								<p class="item__info-text">12</p>
-							</div>
-							<div class="item__info-box">
-								<img src="@img/like.svg" alt="изображение" class="item__info-image">
-								<p class="item__info-text">90 %</p>
-							</div>
-							<div class="item__info-box">
-								<img src="@img/chat.svg" alt="изображение" class="item__info-image">
-								<p class="item__info-text">5</p>
-							</div>
-						</div>
-						<div class="gallery__chips">
-							<div class="chips">
-								<p class="chips__text">learning</p>
-							</div>
-							<div class="chips">
-								<p class="chips__text">directions</p>
-							</div>
-							<div class="chips">
-								<p class="chips__text">wall</p>
-							</div>
-						</div>
-					</div>
-					<div class="gallery__item element-item">
-						<div class="item__img">
-							<img src="@img/gallery/5.jpg" alt="" class="item__img-image">
-							<div class="item__img-sub">
-								<p class="item__img-text">Nonformal learning and combined combined</p>
-							</div>
-						</div>
-						<div class="item__info">
-							<div class="item__info-box">
-								<img src="@img/eye.svg" alt="изображение" class="item__info-image">
-								<p class="item__info-text">12</p>
-							</div>
-							<div class="item__info-box">
-								<img src="@img/like.svg" alt="изображение" class="item__info-image">
-								<p class="item__info-text">90 %</p>
-							</div>
-							<div class="item__info-box">
-								<img src="@img/chat.svg" alt="изображение" class="item__info-image">
-								<p class="item__info-text">5</p>
-							</div>
-						</div>
-						<div class="gallery__chips">
-							<div class="chips">
-								<p class="chips__text">learning</p>
-							</div>
-							<div class="chips">
-								<p class="chips__text">directions</p>
-							</div>
+				</div>		
+					<div class="elements-gride">
+						<div class="gallery__item element-item">
+							<div class="item__img">
+								<a href="#" class="gallery__item-link">
+									<img src="@img/gallery/1.jpg" alt="" class="item__img-image">
+									<div class="item__img-sub">
+										<p class="item__img-text">Nonformal learning and combined combined</p>
+									</div>
+								</a>
 
-							<div class="chips">
-								<p class="chips__text">map directions</p>
+							</div>
+							<div class="item__info">
+								<div class="item__info-box">
+									<img src="@img/eye.svg" alt="изображение" class="item__info-image">
+									<p class="item__info-text">12</p>
+								</div>
+								<div class="item__info-box">
+									<img src="@img/like.svg" alt="изображение" class="item__info-image">
+									<p class="item__info-text">90 %</p>
+								</div>
+								<div class="item__info-box">
+									<img src="@img/chat.svg" alt="изображение" class="item__info-image">
+									<p class="item__info-text">5</p>
+								</div>
+							</div>
+							<div class="gallery__chips">
+								<div class="chips">
+									<p class="chips__text">learning</p>
+								</div>
+								<div class="chips">
+									<p class="chips__text">directions</p>
+								</div>
+								<div class="chips">
+									<p class="chips__text">wall</p>
+								</div>
+							</div>
+							<img src="@img/hd.svg" alt="" class="gallery__item-hd">
+						</div>
+						<div class="gallery__item element-item">
+							<div class="item__img">
+								<img src="@img/gallery/2.jpg" alt="" class="item__img-image">
+								<div class="item__img-sub">
+									<p class="item__img-text">Nonformal learning and combined combined</p>
+								</div>
+							</div>
+							<div class="item__info">
+								<div class="item__info-box">
+									<img src="@img/eye.svg" alt="изображение" class="item__info-image">
+									<p class="item__info-text">12</p>
+								</div>
+								<div class="item__info-box">
+									<img src="@img/like.svg" alt="изображение" class="item__info-image">
+									<p class="item__info-text">90 %</p>
+								</div>
+								<div class="item__info-box">
+									<img src="@img/chat.svg" alt="изображение" class="item__info-image">
+									<p class="item__info-text">5</p>
+								</div>
+							</div>
+							<div class="gallery__chips">
+								<div class="chips">
+									<p class="chips__text">learning</p>
+								</div>
+								<div class="chips">
+									<p class="chips__text">directions</p>
+								</div>
+								<div class="chips">
+									<p class="chips__text">wall</p>
+								</div>
 							</div>
 						</div>
-					</div>
-					<div class="gallery__item element-item">
-						<div class="item__img">
-							<img src="@img/gallery/6.jpg" alt="" class="item__img-image">
-							<div class="item__img-sub">
-								<p class="item__img-text">Nonformal learning and combined combined</p>
+						<div class="gallery__item element-item">
+							<div class="item__img">
+								<img src="@img/gallery/3.jpg" alt="" class="item__img-image">
+								<div class="item__img-sub">
+									<p class="item__img-text">Nonformal learning and combined combined</p>
+								</div>
+							</div>
+							<div class="item__info">
+								<div class="item__info-box">
+									<img src="@img/eye.svg" alt="изображение" class="item__info-image">
+									<p class="item__info-text">12</p>
+								</div>
+								<div class="item__info-box">
+									<img src="@img/like.svg" alt="изображение" class="item__info-image">
+									<p class="item__info-text">90 %</p>
+								</div>
+								<div class="item__info-box">
+									<img src="@img/chat.svg" alt="изображение" class="item__info-image">
+									<p class="item__info-text">5</p>
+								</div>
+							</div>
+							<div class="gallery__chips">
+								<div class="chips">
+									<p class="chips__text">learning</p>
+								</div>
+								<div class="chips">
+									<p class="chips__text">directions</p>
+								</div>
+								<div class="chips">
+									<p class="chips__text">wall</p>
+								</div>
 							</div>
 						</div>
-						<div class="item__info">
-							<div class="item__info-box">
-								<img src="@img/eye.svg" alt="изображение" class="item__info-image">
-								<p class="item__info-text">12</p>
+						<div class="gallery__item element-item">
+							<div class="item__img">
+								<img src="@img/gallery/4.jpg" alt="" class="item__img-image">
+								<div class="item__img-sub">
+									<p class="item__img-text">Nonformal learning and combined combined</p>
+								</div>
 							</div>
-							<div class="item__info-box">
-								<img src="@img/like.svg" alt="изображение" class="item__info-image">
-								<p class="item__info-text">90 %</p>
+							<div class="item__info">
+								<div class="item__info-box">
+									<img src="@img/eye.svg" alt="изображение" class="item__info-image">
+									<p class="item__info-text">12</p>
+								</div>
+								<div class="item__info-box">
+									<img src="@img/like.svg" alt="изображение" class="item__info-image">
+									<p class="item__info-text">90 %</p>
+								</div>
+								<div class="item__info-box">
+									<img src="@img/chat.svg" alt="изображение" class="item__info-image">
+									<p class="item__info-text">5</p>
+								</div>
 							</div>
-							<div class="item__info-box">
-								<img src="@img/chat.svg" alt="изображение" class="item__info-image">
-								<p class="item__info-text">5</p>
-							</div>
-						</div>
-						<div class="gallery__chips">
-							<div class="chips">
-								<p class="chips__text">learning</p>
-							</div>
-							<div class="chips">
-								<p class="chips__text">directions</p>
-							</div>
-							<div class="chips">
-								<p class="chips__text">wall</p>
-							</div>
-						</div>
-					</div>
-					<div class="gallery__item element-item">
-						<div class="item__img">
-							<img src="@img/gallery/7.jpg" alt="" class="item__img-image">
-							<div class="item__img-sub">
-								<p class="item__img-text">Nonformal learning and combined combined</p>
-							</div>
-						</div>
-						<div class="item__info">
-							<div class="item__info-box">
-								<img src="@img/eye.svg" alt="изображение" class="item__info-image">
-								<p class="item__info-text">12</p>
-							</div>
-							<div class="item__info-box">
-								<img src="@img/like.svg" alt="изображение" class="item__info-image">
-								<p class="item__info-text">90 %</p>
-							</div>
-							<div class="item__info-box">
-								<img src="@img/chat.svg" alt="изображение" class="item__info-image">
-								<p class="item__info-text">5</p>
+							<div class="gallery__chips">
+								<div class="chips">
+									<p class="chips__text">learning</p>
+								</div>
+								<div class="chips">
+									<p class="chips__text">directions</p>
+								</div>
+								<div class="chips">
+									<p class="chips__text">wall</p>
+								</div>
 							</div>
 						</div>
-						<div class="gallery__chips">
-							<div class="chips">
-								<p class="chips__text">learning</p>
+						<div class="gallery__item element-item">
+							<div class="item__img">
+								<img src="@img/gallery/5.jpg" alt="" class="item__img-image">
+								<div class="item__img-sub">
+									<p class="item__img-text">Nonformal learning and combined combined</p>
+								</div>
 							</div>
-							<div class="chips">
-								<p class="chips__text">directions</p>
+							<div class="item__info">
+								<div class="item__info-box">
+									<img src="@img/eye.svg" alt="изображение" class="item__info-image">
+									<p class="item__info-text">12</p>
+								</div>
+								<div class="item__info-box">
+									<img src="@img/like.svg" alt="изображение" class="item__info-image">
+									<p class="item__info-text">90 %</p>
+								</div>
+								<div class="item__info-box">
+									<img src="@img/chat.svg" alt="изображение" class="item__info-image">
+									<p class="item__info-text">5</p>
+								</div>
 							</div>
+							<div class="gallery__chips">
+								<div class="chips">
+									<p class="chips__text">learning</p>
+								</div>
+								<div class="chips">
+									<p class="chips__text">directions</p>
+								</div>
 
+								<div class="chips">
+									<p class="chips__text">map directions</p>
+								</div>
+							</div>
+						</div>
+						<div class="gallery__item element-item">
+							<div class="item__img">
+								<img src="@img/gallery/6.jpg" alt="" class="item__img-image">
+								<div class="item__img-sub">
+									<p class="item__img-text">Nonformal learning and combined combined</p>
+								</div>
+							</div>
+							<div class="item__info">
+								<div class="item__info-box">
+									<img src="@img/eye.svg" alt="изображение" class="item__info-image">
+									<p class="item__info-text">12</p>
+								</div>
+								<div class="item__info-box">
+									<img src="@img/like.svg" alt="изображение" class="item__info-image">
+									<p class="item__info-text">90 %</p>
+								</div>
+								<div class="item__info-box">
+									<img src="@img/chat.svg" alt="изображение" class="item__info-image">
+									<p class="item__info-text">5</p>
+								</div>
+							</div>
+							<div class="gallery__chips">
+								<div class="chips">
+									<p class="chips__text">learning</p>
+								</div>
+								<div class="chips">
+									<p class="chips__text">directions</p>
+								</div>
+								<div class="chips">
+									<p class="chips__text">wall</p>
+								</div>
+							</div>
+						</div>
+						<div class="gallery__item element-item">
+							<div class="item__img">
+								<img src="@img/gallery/7.jpg" alt="" class="item__img-image">
+								<div class="item__img-sub">
+									<p class="item__img-text">Nonformal learning and combined combined</p>
+								</div>
+							</div>
+							<div class="item__info">
+								<div class="item__info-box">
+									<img src="@img/eye.svg" alt="изображение" class="item__info-image">
+									<p class="item__info-text">12</p>
+								</div>
+								<div class="item__info-box">
+									<img src="@img/like.svg" alt="изображение" class="item__info-image">
+									<p class="item__info-text">90 %</p>
+								</div>
+								<div class="item__info-box">
+									<img src="@img/chat.svg" alt="изображение" class="item__info-image">
+									<p class="item__info-text">5</p>
+								</div>
+							</div>
+							<div class="gallery__chips">
+								<div class="chips">
+									<p class="chips__text">learning</p>
+								</div>
+								<div class="chips">
+									<p class="chips__text">directions</p>
+								</div>
+
+							</div>
+						</div>
+						<div class="gallery__item element-item">
+							<div class="item__img">
+								<img src="@img/gallery/8.jpg" alt="" class="item__img-image">
+								<div class="item__img-sub">
+									<p class="item__img-text">Nonformal learning and combined combined</p>
+								</div>
+							</div>
+							<div class="item__info">
+								<div class="item__info-box">
+									<img src="@img/eye.svg" alt="изображение" class="item__info-image">
+									<p class="item__info-text">12</p>
+								</div>
+								<div class="item__info-box">
+									<img src="@img/like.svg" alt="изображение" class="item__info-image">
+									<p class="item__info-text">90 %</p>
+								</div>
+								<div class="item__info-box">
+									<img src="@img/chat.svg" alt="изображение" class="item__info-image">
+									<p class="item__info-text">5</p>
+								</div>
+							</div>
+							<div class="gallery__chips">
+								<div class="chips">
+									<p class="chips__text">learning</p>
+								</div>
+								<div class="chips">
+									<p class="chips__text">directions</p>
+								</div>
+								<div class="chips">
+									<p class="chips__text">wall</p>
+								</div>
+							</div>
+						</div>
+						<div class="gallery__item element-item">
+							<div class="item__img">
+								<img src="@img/gallery/9.jpg" alt="" class="item__img-image">
+								<div class="item__img-sub">
+									<p class="item__img-text">Nonformal learning and combined combined</p>
+								</div>
+							</div>
+							<div class="item__info">
+								<div class="item__info-box">
+									<img src="@img/eye.svg" alt="изображение" class="item__info-image">
+									<p class="item__info-text">12</p>
+								</div>
+								<div class="item__info-box">
+									<img src="@img/like.svg" alt="изображение" class="item__info-image">
+									<p class="item__info-text">90 %</p>
+								</div>
+								<div class="item__info-box">
+									<img src="@img/chat.svg" alt="изображение" class="item__info-image">
+									<p class="item__info-text">5</p>
+								</div>
+							</div>
+							<div class="gallery__chips">
+								<div class="chips">
+									<p class="chips__text">learning</p>
+								</div>
+								<div class="chips">
+									<p class="chips__text">directions</p>
+								</div>
+								<div class="chips">
+									<p class="chips__text">wall</p>
+								</div>
+							</div>
+						</div>
+						<div class="gallery__item element-item">
+							<div class="item__img">
+								<img src="@img/gallery/10.jpg" alt="" class="item__img-image">
+								<div class="item__img-sub">
+									<p class="item__img-text">Nonformal learning and combined combined</p>
+								</div>
+							</div>
+							<div class="item__info">
+								<div class="item__info-box">
+									<img src="@img/eye.svg" alt="изображение" class="item__info-image">
+									<p class="item__info-text">12</p>
+								</div>
+								<div class="item__info-box">
+									<img src="@img/like.svg" alt="изображение" class="item__info-image">
+									<p class="item__info-text">90 %</p>
+								</div>
+								<div class="item__info-box">
+									<img src="@img/chat.svg" alt="изображение" class="item__info-image">
+									<p class="item__info-text">5</p>
+								</div>
+							</div>
+							<div class="gallery__chips">
+								<div class="chips">
+									<p class="chips__text">learning</p>
+								</div>
+								<div class="chips">
+									<p class="chips__text">directions</p>
+								</div>
+								<div class="chips">
+									<p class="chips__text">wall</p>
+								</div>
+								<div class="chips">
+									<p class="chips__text">wall key</p>
+								</div>
+							</div>
 						</div>
 					</div>
-					<div class="gallery__item element-item">
-						<div class="item__img">
-							<img src="@img/gallery/8.jpg" alt="" class="item__img-image">
-							<div class="item__img-sub">
-								<p class="item__img-text">Nonformal learning and combined combined</p>
-							</div>
-						</div>
-						<div class="item__info">
-							<div class="item__info-box">
-								<img src="@img/eye.svg" alt="изображение" class="item__info-image">
-								<p class="item__info-text">12</p>
-							</div>
-							<div class="item__info-box">
-								<img src="@img/like.svg" alt="изображение" class="item__info-image">
-								<p class="item__info-text">90 %</p>
-							</div>
-							<div class="item__info-box">
-								<img src="@img/chat.svg" alt="изображение" class="item__info-image">
-								<p class="item__info-text">5</p>
-							</div>
-						</div>
-						<div class="gallery__chips">
-							<div class="chips">
-								<p class="chips__text">learning</p>
-							</div>
-							<div class="chips">
-								<p class="chips__text">directions</p>
-							</div>
-							<div class="chips">
-								<p class="chips__text">wall</p>
-							</div>
-						</div>
-					</div>
-					<div class="gallery__item element-item">
-						<div class="item__img">
-							<img src="@img/gallery/9.jpg" alt="" class="item__img-image">
-							<div class="item__img-sub">
-								<p class="item__img-text">Nonformal learning and combined combined</p>
-							</div>
-						</div>
-						<div class="item__info">
-							<div class="item__info-box">
-								<img src="@img/eye.svg" alt="изображение" class="item__info-image">
-								<p class="item__info-text">12</p>
-							</div>
-							<div class="item__info-box">
-								<img src="@img/like.svg" alt="изображение" class="item__info-image">
-								<p class="item__info-text">90 %</p>
-							</div>
-							<div class="item__info-box">
-								<img src="@img/chat.svg" alt="изображение" class="item__info-image">
-								<p class="item__info-text">5</p>
-							</div>
-						</div>
-						<div class="gallery__chips">
-							<div class="chips">
-								<p class="chips__text">learning</p>
-							</div>
-							<div class="chips">
-								<p class="chips__text">directions</p>
-							</div>
-							<div class="chips">
-								<p class="chips__text">wall</p>
-							</div>
-						</div>
-					</div>
-					<div class="gallery__item element-item">
-						<div class="item__img">
-							<img src="@img/gallery/10.jpg" alt="" class="item__img-image">
-							<div class="item__img-sub">
-								<p class="item__img-text">Nonformal learning and combined combined</p>
-							</div>
-						</div>
-						<div class="item__info">
-							<div class="item__info-box">
-								<img src="@img/eye.svg" alt="изображение" class="item__info-image">
-								<p class="item__info-text">12</p>
-							</div>
-							<div class="item__info-box">
-								<img src="@img/like.svg" alt="изображение" class="item__info-image">
-								<p class="item__info-text">90 %</p>
-							</div>
-							<div class="item__info-box">
-								<img src="@img/chat.svg" alt="изображение" class="item__info-image">
-								<p class="item__info-text">5</p>
-							</div>
-						</div>
-						<div class="gallery__chips">
-							<div class="chips">
-								<p class="chips__text">learning</p>
-							</div>
-							<div class="chips">
-								<p class="chips__text">directions</p>
-							</div>
-							<div class="chips">
-								<p class="chips__text">wall</p>
-							</div>
-							<div class="chips">
-								<p class="chips__text">wall key</p>
-							</div>
-						</div>
-					</div>
-				</div>
-				</div>
-				
-				<div class="setting setting__category" data-category>
-					<div class="sort__wrapper">
+					<div class="sort__wrapper sort__wrapper-down">
 						<div class="sort__title">
 							<p class="sort__title-text"> <img src="@img/sort.svg" alt="" class="sort__title-img">Sort
 								by:</p>
@@ -529,7 +529,7 @@
 							</div>
 						</div>
 					</div>
-					<div class="filter__wrapper" data-filter="catagory">
+					<div class=" filter__wrapper-down" data-filter="catagory">
 						<div class="filter__title">
 							<p class="filter__title-text"> <img src="@img/filter.svg" alt="" class="filter__title-img">
 								Filter:</p>
@@ -598,7 +598,7 @@
 							</div>
 						</div>
 					</div>
-					<div class="pagination">
+					<div class="pagination pagination-down">
 						<p class="pagination__item pagination__item--active">1</p>
 						<p class="pagination__item">2</p>
 						<p class="pagination__item">3</p>
@@ -613,6 +613,8 @@
 							</svg>
 						</p>
 					</div>
+				</div>
+				<div class="setting setting__category" data-category>
 					<div class="category__wrapper">
 						<h2 class="chapter category__chapter">
 							Category list
@@ -834,7 +836,7 @@
 								</div>
 							</div>
 						</div>
-					</div>
+					</div>					
 				</div>
 				<h2 class="chapter top__chapter">
 					Top list
@@ -879,7 +881,7 @@
 				</div>
 				<div class="video">
 
-					
+
 					<div class="video__wrapper">
 						<iframe class="video__youtube" src="https://www.youtube.com/embed/otKysx-M64k"
 							title="YouTube video player" frameborder="0"
@@ -976,11 +978,14 @@
 						</div>
 					</div>
 					<hr class="line">
-					<p class="video__search-text">
+					<div class="video__search-text">
 						<span class="video__search-title">Related searches:</span>
-						learning, directions, practicing, about time, estonia, networking, validation, non-formal
-						learning
-					</p>
+						<a href="#" class="video__search">learning</a>,
+						<a href="#" class="video__search">directions</a>,
+						<a href="#" class="video__search">practicing</a>,
+						<a href="#" class="video__search">estonia</a>,
+
+					</div>
 					<div class="video__category">
 						<div class="video__items">
 							<a href="#" class="category__text-title">
@@ -1080,10 +1085,11 @@
 						<button type="button" class="btn form__btn">Add comment</button>
 					</form>
 				</div>
-			</div>
+			
 	</main>
 	@@include('html/footer.html',{})
 	@@include('html/mobile-menu.html',{})
 	<script src="js/app.min.js"></script>
 </body>
+
 </html>
